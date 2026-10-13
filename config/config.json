@@ -1,0 +1,19 @@
+{
+  "chunk_size": 512,
+  "hybrid_alpha": 0.5,
+  "rerank_depth": 20,
+  "refusal_threshold": 0.4,
+  "refusal_instruction": "If the spans do not answer the ticket, refuse with weak_evidence.",
+  "top_k": 5,
+  "answer_cache_cosine": 0.92,
+  "llm_model": "openai:gpt-4o-mini",
+  "embed_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "rerank_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+  "prices_per_mtok": {
+    "openai:gpt-4o-mini": {"in": 0.15, "out": 0.60},
+    "anthropic:claude-haiku-4-5": {"in": 1.00, "out": 5.00},
+    "gemini:gemini-2.0-flash": {"in": 0.10, "out": 0.40}
+  },
+  "gates": {"median_dollars_cap": 0.0003, "p95_latency_ms_cap": 2000},
+  "budget": {"max_prompt_tokens": 2500}
+}
