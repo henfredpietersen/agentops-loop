@@ -1,0 +1,2 @@
+# Real dense embedder and cross-encoder. Pulls torch. Used in the Docker image, not in CI.
+sentence-transformers==3.4.1
