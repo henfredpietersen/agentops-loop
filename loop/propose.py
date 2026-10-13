@@ -42,10 +42,10 @@ def _standin(cfg: dict, fails: list[dict], tried: set[str]) -> dict:
     why = Counter(w for f in fails for w in f["why"])
     thr = cfg["refusal_threshold"]
     moves = []
-    if why["wrong_refusal"] >= why["should_refuse"]:
-        moves.append(("refusal_threshold", round(thr - 0.05, 2)))
-    if why["should_refuse"] > 0:
-        moves.append(("refusal_threshold", round(thr + 0.05, 2)))
+    direction = -1 if why["wrong_refusal"] >= why["should_refuse"] else 1
+    for step in (1, 2, 3):  # nearest threshold moves first, in the direction the failures point
+        moves.append(("refusal_threshold", round(thr + direction * 0.05 * step, 2)))
+        moves.append(("refusal_threshold", round(thr - direction * 0.05 * step, 2)))
     if why["span_unsupported"]:
         moves += [("hybrid_alpha", a) for a in MENU["hybrid_alpha"] if a != cfg["hybrid_alpha"]]
         moves += [("rerank_depth", d) for d in MENU["rerank_depth"] if d != cfg["rerank_depth"]]

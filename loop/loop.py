@@ -85,8 +85,7 @@ def run_attempt(cfg_path: Path = CONFIG_PATH, runs: Path = RUNS) -> dict:
     verdict, reason = decide(before["metrics"]["S"], after["metrics"]["S"], after["gates"]["ok"], holdout, accepted)
 
     cands = candidates_from(after["rows"], f"loop-{n}")
-    if cands:
-        EvalPass().append_candidates(cands)
+    cands = EvalPass().append_candidates(cands) if cands else []
     (rd / "candidates.jsonl").write_text("".join(json.dumps(c) + "\n" for c in cands))
     (rd / "report.json").write_text(json.dumps({"train_before": before["metrics"], "train_after": after["metrics"],
                                                 "train_gates_after": after["gates"], "holdout": holdout,

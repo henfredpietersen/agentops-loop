@@ -39,8 +39,13 @@ class EvalPass:
             for r in rows:
                 f.write(json.dumps(r) + "\n")
 
-    def append_candidates(self, rows: list[dict]) -> None:
-        self.write(self.data / "candidates.jsonl", rows)
+    def append_candidates(self, rows: list[dict]) -> list[dict]:
+        path = self.data / "candidates.jsonl"
+        seen = {(c["source_ticket_id"], c["proposed_chunk_id"]) for c in
+                (json.loads(l) for l in path.read_text().splitlines() if l.strip())} if path.exists() else set()
+        new = [r for r in rows if (r["source_ticket_id"], r["proposed_chunk_id"]) not in seen]
+        self.write(path, new)
+        return new
 
 
 def base_kb(cfg: dict) -> KnowledgeBase:
