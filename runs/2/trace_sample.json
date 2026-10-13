@@ -1,0 +1,70 @@
+{
+  "trace_id": "e86977a80d07",
+  "ticket_id": "t02",
+  "caller_role": "public",
+  "ticket_redacted": "How long does it take for an approved refund to be paid back to me?",
+  "config_hash": "eadd619abca7",
+  "cache_hit": false,
+  "spans": [
+    {
+      "actor": "supervisor",
+      "tool": "route",
+      "args_keys": [
+        "route"
+      ],
+      "chunk_ids": [],
+      "latency_ms": 0.02297900005032716,
+      "tokens_in": 53,
+      "tokens_out": 8,
+      "dollars": 1.275e-05,
+      "note": null
+    },
+    {
+      "actor": "retriever",
+      "tool": "search",
+      "args_keys": [
+        "query",
+        "role"
+      ],
+      "chunk_ids": [
+        "cec35b55cb1210f5",
+        "3f976cbd4533765b",
+        "ab5369c7d9ac7f9e",
+        "472b9a82a94fddcb",
+        "87f78566164b38c0"
+      ],
+      "latency_ms": 0.6323349999775019,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "dollars": 0.0,
+      "note": null
+    },
+    {
+      "actor": "guard",
+      "tool": null,
+      "args_keys": [],
+      "chunk_ids": [],
+      "latency_ms": 0.2188119999573246,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "dollars": 0.0,
+      "note": "clean"
+    },
+    {
+      "actor": "specialist",
+      "tool": "generate",
+      "args_keys": [
+        "spans",
+        "ticket"
+      ],
+      "chunk_ids": [
+        "cec35b55cb1210f5"
+      ],
+      "latency_ms": 0.07096700005604362,
+      "tokens_in": 296,
+      "tokens_out": 18,
+      "dollars": 5.519999999999999e-05,
+      "note": null
+    }
+  ]
+}

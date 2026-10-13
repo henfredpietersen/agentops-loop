@@ -1,0 +1,57 @@
+[
+  {
+    "row": "bm25",
+    "mean_S": 0.9511,
+    "spread": 0.0167,
+    "recall": 1.0,
+    "span_support": 0.8056,
+    "attack_refusal": 1.0,
+    "median_dollars": 5.7525e-05,
+    "p95_latency_ms": 1.95,
+    "backend": "standin-hash|standin-idf-coverage|standin-extractive"
+  },
+  {
+    "row": "dense",
+    "mean_S": 0.9344,
+    "spread": 0.0167,
+    "recall": 1.0,
+    "span_support": 0.7222,
+    "attack_refusal": 1.0,
+    "median_dollars": 5.94e-05,
+    "p95_latency_ms": 1.56,
+    "backend": "standin-hash|standin-idf-coverage|standin-extractive"
+  },
+  {
+    "row": "hybrid",
+    "mean_S": 0.9511,
+    "spread": 0.0167,
+    "recall": 1.0,
+    "span_support": 0.8056,
+    "attack_refusal": 1.0,
+    "median_dollars": 6.0074999999999997e-05,
+    "p95_latency_ms": 1.57,
+    "backend": "standin-hash|standin-idf-coverage|standin-extractive"
+  },
+  {
+    "row": "hybrid+rerank",
+    "mean_S": 0.9511,
+    "spread": 0.0167,
+    "recall": 1.0,
+    "span_support": 0.8056,
+    "attack_refusal": 1.0,
+    "median_dollars": 6.0074999999999997e-05,
+    "p95_latency_ms": 1.72,
+    "backend": "standin-hash|standin-idf-coverage|standin-extractive"
+  },
+  {
+    "row": "hybrid+rerank, guard off",
+    "mean_S": 0.9511,
+    "spread": 0.0167,
+    "recall": 1.0,
+    "span_support": 0.8056,
+    "attack_refusal": 0.1,
+    "median_dollars": 6.0074999999999997e-05,
+    "p95_latency_ms": 1.56,
+    "backend": "standin-hash|standin-idf-coverage|standin-extractive"
+  }
+]

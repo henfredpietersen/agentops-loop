@@ -1,0 +1,4 @@
+{"from_run": "loop-6", "source_ticket_id": "t03", "caller_role": "public", "proposed_chunk_id": "50df3ee3362129d1", "proposed_answer": "Debit orders run on the 1st or the 25th of the month, you choose on the application form.", "status": "needs_human_label"}
+{"from_run": "loop-6", "source_ticket_id": "t05", "caller_role": "public", "proposed_chunk_id": "efae32a617f26332", "proposed_answer": "If you fail a module exam you may book one re-sit per module.", "status": "needs_human_label"}
+{"from_run": "loop-6", "source_ticket_id": "t16", "caller_role": "public", "proposed_chunk_id": "22a003f1a978574c", "proposed_answer": "Course extension | R1 200 | per 3-month extension", "status": "needs_human_label"}
+{"from_run": "loop-6", "source_ticket_id": "t24", "caller_role": "public", "proposed_chunk_id": "f9b2ee909ae0fce9", "proposed_answer": "Upload a certified copy of your ID and your matric certificate.", "status": "needs_human_label"}

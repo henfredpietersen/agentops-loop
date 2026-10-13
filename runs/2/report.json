@@ -1,0 +1,55 @@
+{
+  "train_before": {
+    "recall": 1.0,
+    "route_accuracy": 0.975,
+    "refusal_accuracy": 0.85,
+    "span_support": 0.5714285714285714,
+    "acl_compliance": 1.0,
+    "S": 0.8793,
+    "cache_hits": 0
+  },
+  "train_after": {
+    "recall": 1.0,
+    "route_accuracy": 0.975,
+    "refusal_accuracy": 0.775,
+    "span_support": 0.5,
+    "acl_compliance": 1.0,
+    "S": 0.85,
+    "cache_hits": 0
+  },
+  "train_gates_after": {
+    "median_dollars": 5.4075e-05,
+    "p95_latency_ms": 1.71,
+    "cost_ok": true,
+    "latency_ok": true,
+    "ok": true
+  },
+  "holdout": null,
+  "accepted_before": {
+    "label": "accepted-baseline",
+    "config_hash": "1a81cea6f51e",
+    "mode": "hybrid_rerank",
+    "guard_on": true,
+    "backend": "standin-hash|standin-idf-coverage|standin-extractive",
+    "samples": [
+      0.94,
+      0.9567,
+      0.9567
+    ],
+    "mean_S": 0.9511,
+    "spread": 0.0167,
+    "metrics_mean": {
+      "recall": 1.0,
+      "route_accuracy": 1.0,
+      "refusal_accuracy": 0.95,
+      "span_support": 0.8056,
+      "acl_compliance": 1.0,
+      "cache_hits": 0
+    },
+    "median_dollars": 6.0074999999999997e-05,
+    "p95_latency_ms": 1.74,
+    "gates_ok": true,
+    "attack_refusal": 1.0,
+    "leaked_responses": 0
+  }
+}

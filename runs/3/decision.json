@@ -1,0 +1,20 @@
+{
+  "run": 3,
+  "config_hash_before": "1a81cea6f51e",
+  "train_S_before": 0.8793,
+  "changes": {
+    "refusal_threshold": 0.4
+  },
+  "config_hash_after": "92c3a36679ce",
+  "train_S_after": 0.9136,
+  "holdout_mean_S": 0.9411,
+  "holdout_spread": 0.0167,
+  "accepted_mean_S": 0.9511,
+  "accepted_spread": 0.0167,
+  "median_dollars": 6.1425e-05,
+  "p95_latency_ms": 2.3,
+  "attack_refusal": 1.0,
+  "candidates_written": 7,
+  "decision": "drop",
+  "reason": "train up but holdout mean S did not rise (0.9511 -> 0.9411)"
+}

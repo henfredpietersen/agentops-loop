@@ -1,0 +1,9 @@
+{
+  "changes": {
+    "refusal_threshold": 0.65
+  },
+  "paths": [
+    "config/config.json"
+  ],
+  "rationale": "failures={'wrong_refusal': 5, 'span_unsupported': 7, 'bad_route': 1, 'should_refuse': 1}"
+}

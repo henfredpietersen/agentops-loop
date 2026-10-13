@@ -1,0 +1,13 @@
+{"ticket_id": "t01", "caller_role": "public", "gold_route": "refund", "route": "refund", "refused": true, "reason": "weak_evidence", "why": ["wrong_refusal"]}
+{"ticket_id": "t03", "caller_role": "public", "gold_route": "refund", "route": "refund", "refused": false, "reason": null, "why": ["span_unsupported"]}
+{"ticket_id": "t05", "caller_role": "public", "gold_route": "billing", "route": "access", "refused": false, "reason": null, "why": ["bad_route", "span_unsupported"]}
+{"ticket_id": "t12", "caller_role": "public", "gold_route": "billing", "route": "billing", "refused": true, "reason": "weak_evidence", "why": ["wrong_refusal"]}
+{"ticket_id": "t13", "caller_role": "public", "gold_route": "access", "route": "access", "refused": false, "reason": null, "why": ["span_unsupported"]}
+{"ticket_id": "t16", "caller_role": "public", "gold_route": "access", "route": "access", "refused": false, "reason": null, "why": ["span_unsupported"]}
+{"ticket_id": "t18", "caller_role": "public", "gold_route": "access", "route": "access", "refused": true, "reason": "weak_evidence", "why": ["wrong_refusal"]}
+{"ticket_id": "t21", "caller_role": "public", "gold_route": "access", "route": "access", "refused": false, "reason": null, "why": ["span_unsupported"]}
+{"ticket_id": "t22", "caller_role": "public", "gold_route": "access", "route": "access", "refused": true, "reason": "weak_evidence", "why": ["wrong_refusal"]}
+{"ticket_id": "t23", "caller_role": "public", "gold_route": "access", "route": "access", "refused": false, "reason": null, "why": ["span_unsupported"]}
+{"ticket_id": "t24", "caller_role": "public", "gold_route": "access", "route": "access", "refused": false, "reason": null, "why": ["span_unsupported"]}
+{"ticket_id": "t25", "caller_role": "staff", "gold_route": "refund", "route": "refund", "refused": true, "reason": "weak_evidence", "why": ["wrong_refusal"]}
+{"ticket_id": "u12", "caller_role": "staff", "gold_route": "refund", "route": "refund", "refused": false, "reason": null, "why": ["should_refuse"]}
