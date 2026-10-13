@@ -1,0 +1,6 @@
+.git
+.cache
+__pycache__
+.pytest_cache
+.env
+.pytest_reasons.jsonl

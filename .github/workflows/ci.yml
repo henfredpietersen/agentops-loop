@@ -1,0 +1,21 @@
+name: ci
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    env:
+      AGENTOPS_STANDIN: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install -r requirements.txt
+      - name: pytest
+        run: python -m pytest -q
+      - name: runbook code check
+        run: python scripts/check_runbook.py
+      - name: sql leak check
+        run: |
+          rm -f data/eval.db
+          python -m eval.harness --label ci
+          python scripts/sql_leak_check.py

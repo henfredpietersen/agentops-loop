@@ -1,0 +1,28 @@
+# Cloud Run service manifest. Not deployed by this repo; no credentials are stored here.
+# Deploy yourself with:
+#   gcloud builds submit --tag REGION-docker.pkg.dev/PROJECT/agentops/agentops-loop
+#   gcloud run services replace cloudrun.yaml --region REGION
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: agentops-loop
+spec:
+  template:
+    metadata:
+      annotations:
+        autoscaling.knative.dev/maxScale: "2"
+    spec:
+      containerConcurrency: 20
+      timeoutSeconds: 60
+      containers:
+        - image: REGION-docker.pkg.dev/PROJECT/agentops/agentops-loop:latest
+          ports:
+            - containerPort: 8080
+          resources:
+            limits: {cpu: "2", memory: 4Gi}
+          env:
+            - name: LLM_PROVIDER
+              value: anthropic
+            - name: ANTHROPIC_API_KEY
+              valueFrom:
+                secretKeyRef: {name: anthropic-api-key, key: latest}
