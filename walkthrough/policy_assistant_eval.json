@@ -1,0 +1,254 @@
+{
+ "commit": "30333ca53d01ef1d5435482e8a030752a78e34a3",
+ "hit_at_1": 0.8,
+ "hit_at_3": 0.8667,
+ "mrr": 0.8333,
+ "n": 15,
+ "questions": [
+  {
+   "expected": "beneficiaries#Changing beneficiaries",
+   "question": "How do I change my beneficiary?",
+   "rank": 1,
+   "results": [
+    {
+     "id": "beneficiaries#Changing beneficiaries",
+     "score": 0.346,
+     "title": "Changing beneficiaries"
+    },
+    {
+     "id": "beneficiaries#No beneficiary nominated",
+     "score": 0.292,
+     "title": "No beneficiary nominated"
+    },
+    {
+     "id": "beneficiaries#Nominating a beneficiary",
+     "score": 0.247,
+     "title": "Nominating a beneficiary"
+    }
+   ]
+  },
+  {
+   "expected": "beneficiaries#Minors as beneficiaries",
+   "question": "Can my child be a beneficiary?",
+   "rank": 1,
+   "results": [
+    {
+     "id": "beneficiaries#Minors as beneficiaries",
+     "score": 0.378,
+     "title": "Minors as beneficiaries"
+    },
+    {
+     "id": "beneficiaries#No beneficiary nominated",
+     "score": 0.321,
+     "title": "No beneficiary nominated"
+    },
+    {
+     "id": "beneficiaries#Changing beneficiaries",
+     "score": 0.291,
+     "title": "Changing beneficiaries"
+    }
+   ]
+  },
+  {
+   "expected": "beneficiaries#No beneficiary nominated",
+   "question": "Who gets the money if I never named anyone?",
+   "rank": null,
+   "results": [
+    {
+     "id": "cancellations#Cancelling after the cooling-off period",
+     "score": 0.156,
+     "title": "Cancelling after the cooling-off period"
+    }
+   ]
+  },
+  {
+   "expected": "beneficiaries#Nominating a beneficiary",
+   "question": "Can I split the payout between my two kids?",
+   "rank": null,
+   "results": []
+  },
+  {
+   "expected": "premiums#Missed premiums and the grace period",
+   "question": "What happens if I miss a premium?",
+   "rank": 1,
+   "results": [
+    {
+     "id": "premiums#Missed premiums and the grace period",
+     "score": 0.323,
+     "title": "Missed premiums and the grace period"
+    }
+   ]
+  },
+  {
+   "expected": "premiums#Annual premium increases",
+   "question": "Why did my premium go up this year?",
+   "rank": 1,
+   "results": [
+    {
+     "id": "premiums#Annual premium increases",
+     "score": 0.211,
+     "title": "Annual premium increases"
+    },
+    {
+     "id": "premiums#Missed premiums and the grace period",
+     "score": 0.185,
+     "title": "Missed premiums and the grace period"
+    }
+   ]
+  },
+  {
+   "expected": "premiums#How premiums are paid",
+   "question": "Can I change my debit order date?",
+   "rank": 1,
+   "results": [
+    {
+     "id": "premiums#How premiums are paid",
+     "score": 0.522,
+     "title": "How premiums are paid"
+    }
+   ]
+  },
+  {
+   "expected": "premiums#Reinstating a lapsed policy",
+   "question": "My policy lapsed. Can I get it back?",
+   "rank": 1,
+   "results": [
+    {
+     "id": "premiums#Reinstating a lapsed policy",
+     "score": 0.28,
+     "title": "Reinstating a lapsed policy"
+    },
+    {
+     "id": "claims#Why a claim can be declined",
+     "score": 0.234,
+     "title": "Why a claim can be declined"
+    },
+    {
+     "id": "premiums#Missed premiums and the grace period",
+     "score": 0.158,
+     "title": "Missed premiums and the grace period"
+    }
+   ]
+  },
+  {
+   "expected": "cancellations#Cooling-off period",
+   "question": "Can I cancel and get a refund in the cooling-off period?",
+   "rank": 1,
+   "results": [
+    {
+     "id": "cancellations#Cooling-off period",
+     "score": 0.459,
+     "title": "Cooling-off period"
+    },
+    {
+     "id": "cancellations#Cancelling after the cooling-off period",
+     "score": 0.374,
+     "title": "Cancelling after the cooling-off period"
+    },
+    {
+     "id": "premiums#Missed premiums and the grace period",
+     "score": 0.169,
+     "title": "Missed premiums and the grace period"
+    }
+   ]
+  },
+  {
+   "expected": "cancellations#Cancelling after the cooling-off period",
+   "question": "Do I get money back if I cancel after a few years?",
+   "rank": 1,
+   "results": [
+    {
+     "id": "cancellations#Cancelling after the cooling-off period",
+     "score": 0.306,
+     "title": "Cancelling after the cooling-off period"
+    }
+   ]
+  },
+  {
+   "expected": "cancellations#Alternatives to cancelling",
+   "question": "I can't afford my premium. What are my options?",
+   "rank": 1,
+   "results": [
+    {
+     "id": "cancellations#Alternatives to cancelling",
+     "score": 0.298,
+     "title": "Alternatives to cancelling"
+    },
+    {
+     "id": "premiums#How premiums are paid",
+     "score": 0.158,
+     "title": "How premiums are paid"
+    }
+   ]
+  },
+  {
+   "expected": "claims#How to submit a death claim",
+   "question": "What documents do I need for a death claim?",
+   "rank": 2,
+   "results": [
+    {
+     "id": "claims#How long a claim takes",
+     "score": 0.273,
+     "title": "How long a claim takes"
+    },
+    {
+     "id": "claims#How to submit a death claim",
+     "score": 0.243,
+     "title": "How to submit a death claim"
+    },
+    {
+     "id": "cancellations#Cooling-off period",
+     "score": 0.201,
+     "title": "Cooling-off period"
+    }
+   ]
+  },
+  {
+   "expected": "claims#How long a claim takes",
+   "question": "How long does a claim take?",
+   "rank": 1,
+   "results": [
+    {
+     "id": "claims#How long a claim takes",
+     "score": 0.369,
+     "title": "How long a claim takes"
+    },
+    {
+     "id": "claims#Why a claim can be declined",
+     "score": 0.159,
+     "title": "Why a claim can be declined"
+    },
+    {
+     "id": "claims#How to submit a death claim",
+     "score": 0.157,
+     "title": "How to submit a death claim"
+    }
+   ]
+  },
+  {
+   "expected": "claims#Why a claim can be declined",
+   "question": "Why was my claim declined?",
+   "rank": 1,
+   "results": [
+    {
+     "id": "claims#Why a claim can be declined",
+     "score": 0.507,
+     "title": "Why a claim can be declined"
+    }
+   ]
+  },
+  {
+   "expected": "claims#Disability and dread disease claims",
+   "question": "How do I claim for a dread disease?",
+   "rank": 1,
+   "results": [
+    {
+     "id": "claims#Disability and dread disease claims",
+     "score": 0.453,
+     "title": "Disability and dread disease claims"
+    }
+   ]
+  }
+ ],
+ "repo": "henfredpietersen/policy-assistant"
+}
