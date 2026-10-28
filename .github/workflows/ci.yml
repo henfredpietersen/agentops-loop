@@ -19,3 +19,8 @@ jobs:
           rm -f data/eval.db
           python -m eval.harness --label ci
           python scripts/sql_leak_check.py
+      - name: walkthrough matches the code
+        run: |
+          python walkthrough/export.py
+          python walkthrough/build.py
+          git diff --exit-code walkthrough/data.json docs/walkthrough.js
