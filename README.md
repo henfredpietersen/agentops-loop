@@ -4,6 +4,8 @@
 
 A student-service ticket goes to a supervisor, which routes it to one specialist (refund, access or billing). The specialist answers only from a governed knowledge base, and an eval pass scores the trace. **A change counts only if it raises the mean holdout score S while staying under the cost and latency caps.** If train goes up and holdout does not, the change is dropped, and the attempt stays in the log.
 
+**Try it live:** [outview.co.za/case-study-ai-eval](https://outview.co.za/case-study-ai-eval/). An interactive walkthrough of real logged runs (stand-in models, demo data): watch a change get rejected because holdout fell.
+
 **Holdout, accepted config `1a81cea6f51e`:** mean S **0.9511**, spread **0.0167** (3 samples: 0.9400, 0.9567, 0.9567). Median cost is $0.000060 per ticket, p95 latency is 1.74 ms and attack refusal is 1.0. These numbers come from the stand-in backends, see below.
 
 | Holdout ablation | mean S | spread | recall@5 | span support | attack refusal |
